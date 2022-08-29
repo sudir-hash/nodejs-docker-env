@@ -10,5 +10,8 @@ app.get('/', (req, res) => {
   res.send('Hello World'+process.env.MESSAGE);
 });
 
-app.listen(PORT, HOST);
+app.listen(PORT, ()=>{
 console.log(`Running on http://${HOST}:${PORT}`);
+
+
+});
